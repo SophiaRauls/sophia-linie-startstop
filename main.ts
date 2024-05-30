@@ -18,12 +18,12 @@ basic.forever(function () {
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 49)
         } else if (R == 0 && 0 != L) {
             basic.setLedColors(0x000000, 0x000000, 0xff00ff)
-            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 18)
+            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 21)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 21)
         } else if (R != 0 && 0 == L) {
             basic.setLedColors(0x00ff00, 0x000000, 0x000000)
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 23)
-            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 18)
+            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 23)
         } else {
             basic.setLedColors(0x00ffff, 0x00ffff, 0x00ffff)
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 0)
