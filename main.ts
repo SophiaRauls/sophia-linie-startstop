@@ -30,7 +30,7 @@ basic.forever(function () {
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 0)
         }
     } else {
-        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 0)
         basic.setLedColors(0x000000, 0x000000, 0x000000)
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 0)
     }
 })
