@@ -29,20 +29,20 @@ basic.forever(function () {
             Merk = 1
             basic.setLedColors(0x000000, 0x000000, 0xff00ff)
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 21)
-            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 21)
+            maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 32)
         } else if (R == 0 && 0 != L) {
             Merk = -1
             basic.setLedColors(0x00ff00, 0x000000, 0x000000)
-            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 23)
+            maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 32)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 23)
         } else {
             if (Merk < 0) {
                 basic.setLedColors(0x00ff00, 0x00ff00, 0x00ff00)
-                maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 63)
+                maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 64)
                 maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 23)
             } else {
                 basic.setLedColors(0xff00ff, 0xff00ff, 0xff00ff)
-                maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 21)
+                maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 22)
                 maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 60)
             }
         }
